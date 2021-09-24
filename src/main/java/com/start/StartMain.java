@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class StartMain {
     public static void main(String[] args) {
-        ApplicationContext context =
+/*        ApplicationContext context =
                 new ClassPathXmlApplicationContext("start.xml");
 
         FirstStartEntity fse1 = (FirstStartEntity) context.getBean("f1");
@@ -28,6 +28,10 @@ public class StartMain {
         System.out.println(fse6);
 
         FirstStartEntity fse7 = context.getBean("f6", FirstStartEntity.class);
-        System.out.println(fse7);
+        System.out.println(fse7);*/
+
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("annotation1.xml");
+
+
     }
 }
