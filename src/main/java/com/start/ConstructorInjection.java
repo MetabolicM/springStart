@@ -3,10 +3,10 @@ package com.start;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class StartMain {
+public class ConstructorInjection {
     public static void main(String[] args) {
         ApplicationContext context =
-                new ClassPathXmlApplicationContext("start.xml");
+                new ClassPathXmlApplicationContext("constructorInjection.xml");
 
         FirstStartEntity fse1 = (FirstStartEntity) context.getBean("f1");
         System.out.println(fse1);
@@ -29,9 +29,6 @@ public class StartMain {
 
         FirstStartEntity fse7 = context.getBean("f6", FirstStartEntity.class);
         System.out.println(fse7);
-
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("annotation1.xml");
-
 
     }
 }
