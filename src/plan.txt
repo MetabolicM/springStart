@@ -3,3 +3,4 @@
 3. creat beans with constructor
 4. annotation based configuration - xml attributes, structure, annotations, create context
 5. java based config -
+6. SPEL
