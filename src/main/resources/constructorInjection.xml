@@ -4,43 +4,43 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--1st in order-->
-    <bean id="f1" class="com.start.FirstStartEntity">
+    <bean id="f1" class="com.start.entities.Entity1">
         <constructor-arg value="55567"/>
         <constructor-arg value="f"/>
     </bean>
 
     <!--2nd by type-->
-    <bean id="f2" class="com.start.FirstStartEntity">
+    <bean id="f2" class="com.start.entities.Entity1">
         <constructor-arg type="long" value="898"/>
         <constructor-arg type="char" value="t"/>
     </bean>
 
     <!-- dont work! if we use type, we must follow the constructor args order
-    <bean id="f22" class="com.start.FirstStartEntity">
+    <bean id="f22" class="com.start.entities.Entity1">
         <constructor-arg type="char" value="t"/>
         <constructor-arg type="long" value="898"/>
     </bean> -->
 
     <!--3rd by arg name-->
-    <bean id="f3" class="com.start.FirstStartEntity">
+    <bean id="f3" class="com.start.entities.Entity1">
         <constructor-arg name="symbol" value="h"/>
         <constructor-arg name="baseInt" value="555"/>
     </bean>
 
     <!--4th by arg index-->
-    <bean id="f4" class="com.start.FirstStartEntity">
+    <bean id="f4" class="com.start.entities.Entity1">
         <constructor-arg index="1" value="D"/>
         <constructor-arg index="0" value="2222"/>
     </bean>
 
     <!--1st mixed 1 w/o undef-->
-    <bean id="f5" class="com.start.FirstStartEntity">
+    <bean id="f5" class="com.start.entities.Entity1">
         <constructor-arg type="char" value="Y"/>
         <constructor-arg index="0" value="17"/>
     </bean>
 
     <!--2st mixed 1 with undef-->
-    <bean id="f6" class="com.start.FirstStartEntity">
+    <bean id="f6" class="com.start.entities.Entity1">
         <constructor-arg value="Q"/>
         <constructor-arg index="0" value="0"/>
     </bean>

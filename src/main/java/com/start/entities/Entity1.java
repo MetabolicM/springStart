@@ -1,13 +1,13 @@
-package com.start;
+package com.start.entities;
 
 import java.util.Objects;
 
-public class FirstStartEntity {
+public class Entity1 {
 
     private long baseNum;
     private char symbol;
 
-    public FirstStartEntity(long baseInt, char symbol) {
+    public Entity1(long baseInt, char symbol) {
         this.baseNum = baseInt;
         this.symbol = symbol;
     }
@@ -40,7 +40,7 @@ public class FirstStartEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        FirstStartEntity that = (FirstStartEntity) o;
+        Entity1 that = (Entity1) o;
         return baseNum == that.baseNum && symbol == that.symbol;
     }
 

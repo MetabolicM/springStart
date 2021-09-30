@@ -1,33 +1,34 @@
 package com.start;
 
+import com.start.entities.Entity1;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class ConstructorInjection {
+public class ex3_ConstructorInjection {
     public static void main(String[] args) {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("constructorInjection.xml");
 
-        FirstStartEntity fse1 = (FirstStartEntity) context.getBean("f1");
+        Entity1 fse1 = (Entity1) context.getBean("f1");
         System.out.println(fse1);
 
-        FirstStartEntity fse2 = context.getBean("f1", FirstStartEntity.class);
+        Entity1 fse2 = context.getBean("f1", Entity1.class);
         System.out.println(fse2);
         System.out.println(fse1.equals(fse2));
 
-        FirstStartEntity fse3 = context.getBean("f2", FirstStartEntity.class);
+        Entity1 fse3 = context.getBean("f2", Entity1.class);
         System.out.println(fse3);
 
-        FirstStartEntity fse4 = context.getBean("f3", FirstStartEntity.class);
+        Entity1 fse4 = context.getBean("f3", Entity1.class);
         System.out.println(fse4);
 
-        FirstStartEntity fse5 = context.getBean("f4", FirstStartEntity.class);
+        Entity1 fse5 = context.getBean("f4", Entity1.class);
         System.out.println(fse5);
 
-        FirstStartEntity fse6 = context.getBean("f5", FirstStartEntity.class);
+        Entity1 fse6 = context.getBean("f5", Entity1.class);
         System.out.println(fse6);
 
-        FirstStartEntity fse7 = context.getBean("f6", FirstStartEntity.class);
+        Entity1 fse7 = context.getBean("f6", Entity1.class);
         System.out.println(fse7);
 
     }
