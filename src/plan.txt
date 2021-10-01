@@ -27,6 +27,11 @@
 8. внедрение не-Spring объектов. еще раз abstract=true bean, @Configurable и АОП
 - java.beans.PropertyEditor, Property-EditorSupport и регистрация кастомных эдиторов в спринге
 
+9. процессоры
+10. ивенты. ApplicationEvent, publishEvent(), ApplicationListener, onApplicationEvent()
+- NameAware, BeanFactoryAware и ApplicationContextAware, CronTrigger.
+
+
 
 
 
