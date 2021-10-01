@@ -5,6 +5,11 @@
 -внутренние объекты
 -сокращённый синтаксис p
 - внедрение коллекций (<list> <set> <map> <props>)
+- абстрактный бин и наследование компонентов
+5. внедрение методов(!)
+- <replaced-method> , MethodReplacer
+- <lookup-method>
+
 
 5. annotation based configuration - xml attributes, structure, annotations, create context
 6. java based config -
@@ -18,6 +23,11 @@
 - обработка коллекций
 - <util: >, параметры location, systemEnvironment, systemProperties, и прочие параметры
 - выборка/фильтрация элементов коллекции .?[] .^[] .$[], jnj, отбражение коллекций: .![]
+
+8. внедрение не-Spring объектов. еще раз abstract=true bean, @Configurable и АОП
+- java.beans.PropertyEditor, Property-EditorSupport и регистрация кастомных эдиторов в спринге
+
+
 
 
 
