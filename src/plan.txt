@@ -1,6 +1,19 @@
 1. simple start - dependencies, xml attributes, create context.
 2. creating beans with properties
 3. creat beans with constructor
-4. annotation based configuration - xml attributes, structure, annotations, create context
-5. java based config -
-6. SPEL
+4. create beans with factory method
+-внутренние объекты
+-сокращённый синтаксис p
+- внедрение коллекций (<list> <set> <map> <props>)
+
+5. annotation based configuration - xml attributes, structure, annotations, create context
+6. java based config -
+7. SPEL!!!
+- литералы
+- обращение к свойствам
+- вызов методов
+- защищенный оператор
+- доступ к статике T()
+
+
+8. профили
