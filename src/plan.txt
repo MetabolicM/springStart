@@ -34,6 +34,8 @@
 
 
 
-
+* using spel in annotation's arguments
 
 8. профили
+
+https://kotlinlang.org/docs/koans.html
