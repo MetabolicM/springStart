@@ -9,7 +9,8 @@
 5. внедрение методов(!)
 - <replaced-method> , MethodReplacer
 - <lookup-method>
-
+6. BeanPostProcessor - модификация контейнера
+- AutowiredAnnotationBeanPostProcessor
 
 5. annotation based configuration - xml attributes, structure, annotations, create context
 6. java based config -
